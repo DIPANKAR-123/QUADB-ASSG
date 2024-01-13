@@ -1,1 +1,61 @@
 /* write your css here */
+* {
+    scroll-behavior: smooth;
+  }
+  
+  .app {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ee7752, #1ef542, #23a6d5, #23d5ab);
+    color: white;
+    padding-top: 130px;
+    padding-bottom: 70px;
+    /* background: linear-gradient(90deg, #ffa9a9, #64a1e0, #ffa9a9, #64a1e0); */
+  background-size: 400% 400%;
+  -webkit-animation: gradientBG 7s ease infinite forwards;
+  animation: gradientBG 7s ease infinite forwards;
+  }
+  @-webkit-keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @media (max-width: 700px) {
+    .app {
+      padding-top: 70px;
+    }
+  }
+  
+  .pageTitle {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vw;
+    padding: 4px;
+    border-radius: 50px;
+    color: white;
+  }
+  
+  @media (max-width: 1000px) {
+    .pageTitle {
+      font-size: 6.4vw;
+    }
+  }
+  
